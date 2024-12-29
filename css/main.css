@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
 }
@@ -10,7 +10,8 @@
 
 html {
   scroll-behavior: smooth;
-  background: #b3dffc;
+  background: #fdf1c8;
+
   color: #000000;
 }
 
@@ -115,8 +116,8 @@ a {
   height: 60px;
   backdrop-filter: blur(33px);
 
-  border-bottom: 4px solid #1c8be7;
-  background: #fff352;
+  background: #fff9e4;
+  box-shadow: 0px 4px 4px 0px #fba23c;
 }
 .header__background {
   position: absolute;
@@ -128,8 +129,8 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  border-bottom: 4px solid #1c8be7;
-  background: #fff352;
+  background: #fff9e4;
+  box-shadow: 0px 4px 4px 0px #fba23c;
 }
 .header.is-open .header__background {
   left: 0;
@@ -200,37 +201,31 @@ a {
   transition: 0.3s;
   z-index: 999;
 
-  padding: 50px 60px;
+  padding: 30px 60px;
 
-  border-radius: 0px 0px;
+  border-radius: 0px 0px 26px 26px;
 
-  background: #fff352;
-  border-bottom: 2px solid #ffffff;
+  background: #fff9e4;
+
+  border-bottom: 2px solid #000000;
 }
 .navigation__list.is-open {
   right: 0;
 }
 .navigation__link {
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 30px;
+  font-family: Montserrat Alternates;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.94px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
   text-decoration: none;
-  color: #1c8be7;
+  color: #000000;
 }
 .navigation__link:hover,
 .navigation__link:focus {
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 900;
-  line-height: 30px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 .header.is-open {
   background-color: transparent;
@@ -257,6 +252,8 @@ a {
     margin-right: 300px;
   }
   .header {
+    background: #fff9e4;
+
     width: 100%;
 
     height: 80px;
@@ -267,10 +264,11 @@ a {
 
     z-index: 1000;
 
-    border-radius: 0px 0px 28px 28px;
+    border-radius: 0px 0px;
   }
 
   .header__background {
+    background: #fff9e4;
   }
 
   .header__icon-button {
@@ -298,7 +296,7 @@ a {
     border: none;
     padding-block: 0;
     flex: 1;
-    gap: 120px;
+    gap: 110px;
     height: 0px;
     display: flex;
     justify-content: center;
@@ -308,15 +306,13 @@ a {
   .navigation__link {
     display: flex;
 
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
+    font-family: Montserrat Alternates;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.94px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
-    color: #1c8be7;
   }
 
   .header__icon-home-img {
@@ -329,33 +325,34 @@ a {
 
 .home {
   width: 375px;
-  height: 879px;
+  height: 760px;
 
-  padding: 100px 3px 0;
+  padding: 69px 0px 0;
   margin: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/home/Home.png");
+  background-image: url("/img/home/Home.png");
 }
 
 .home-title {
   margin: auto;
-  width: 364px;
-  height: 153px;
+  width: 330.36px;
+  height: 225px;
 }
 .home-text {
-  font-family: Poppins;
-  font-size: 22px;
+  font-family: Montserrat Alternates;
+  font-size: 20px;
   font-weight: 900;
-  line-height: 32px;
+  line-height: 24.38px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #008bff;
-  text-shadow: 0px 2px 0px #0b1143;
-  text-transform: uppercase;
 
+  color: #fffeec;
+ 
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #290f34;
   padding: 0;
 }
 .home__google-button_link {
@@ -367,31 +364,30 @@ a {
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
-    height: 800px;
+    height: 799px;
 
-    padding: 213px 0 0 55px;
+    padding: 120px 0 0 0px;
     display: flex;
     flex-direction: column;
     align-items: start;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("/image/home/Home\ \(1\).png");
+    background-image: url("/img/home/Home\ \(1\).png");
   }
 
   .home-title {
-    width: 599px;
-    height: 253px;
-    margin: 0 48px;
+    width: 549.31px;
+    height: 375px;
+
+    margin: 0 55px;
   }
   .home-text {
-    padding: 0 48px;
-    width: 696px;
-
-    font-family: Poppins;
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 50px;
+    width: 658px;
+    font-family: Montserrat Alternates;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31.69px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -403,10 +399,10 @@ a {
   }
 }
 .about {
-  padding: 32px 20px 0;
+  padding: 40px 20px 0;
   margin: auto;
   width: 375px;
-  height: 780px;
+  height: 974px;
 
   display: flex;
   flex-direction: column;
@@ -414,32 +410,30 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/about/About\ us.png");
+  background-image: url("/img/about/About\ us.png");
 }
 
 .about-title {
-  font-family: Poppins;
+  font-family: Montserrat Alternates;
   font-size: 40px;
   font-weight: 700;
-  line-height: 60px;
-  letter-spacing: 0.03em;
+  line-height: 48.76px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
 .about-text {
-  margin-top: 39px;
+  margin-top: 30px;
   width: 335px;
-  height: 418px;
-  padding: 27px;
-  background: #ffffff80;
-  border: 2px solid #ffffff;
-  border-radius: 26px;
-  backdrop-filter: blur(16px);
+  height: 436x;
+  padding: 36px;
+  background: #fff9e4;
 
-  font-family: Poppins;
-  font-size: 18px;
+  border-radius: 36px;
+
+  font-family: Montserrat Alternates;
+  font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   text-align: left;
@@ -447,8 +441,8 @@ a {
   text-decoration-skip-ink: none;
 }
 .about-text-bold {
-  font-family: Poppins;
-  font-size: 18px;
+  font-family: Montserrat Alternates;
+  font-size: 20px;
   font-weight: 700;
   line-height: 28px;
   text-align: left;
@@ -458,27 +452,28 @@ a {
 
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 32px 100px 0;
+    padding: 40px 100px 0;
     margin: auto;
     width: 1440px;
-    height: 600px;
+    height: 599px;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("/image/about/About\ us\ \(1\).png");
+    background-image: url("/img/about/About\ us\ \(1\).png");
   }
 
   .about-text {
-    margin-top: 40px;
-    width: 1241px;
-    height: 200px;
-    padding: 58px 33px 58px 33px;
-    border-radius: 26px;
+    margin-top: 105px;
 
-    font-family: Poppins;
+    width: 737px;
+    height: auto;
+    padding: 36px;
+
+    font-family: Montserrat Alternates;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -487,7 +482,7 @@ a {
     text-decoration-skip-ink: none;
   }
   .about-text-bold {
-    font-family: Poppins;
+    font-family: Montserrat Alternates;
     font-size: 20px;
     font-weight: 700;
     line-height: 28px;
@@ -498,125 +493,249 @@ a {
 }
 .advantages {
   width: 375px;
-  height: 1130px;
+  height: 1241px;
 
   margin: auto;
-  padding: 32px 0px 0px;
+  padding: 40px 20px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/advantages/Benefits.png");
+  background-image: url("/img/advantages/Advantages.png");
 }
-.advantages-text {
-  font-family: Poppins;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 27px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #ffffff;
-}
+
 .advantages-list {
-  padding: 40px 53px;
+  padding: 30px 0 0;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 34px;
 }
 .advantages-item {
-  width: 269px;
-  height: 224.2px;
-  padding: 24px 16px 24px 16px;
-  border-radius: 26px;
-  background: #ffffffe5;
-  border: 1px solid #fdfdfd;
+  width: 335px;
+  height: 190.01px;
 }
 .advantages-item-img {
   margin: auto;
 }
 .advantages-item-text {
-  font-family: Poppins;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
+  font-family: Montserrat Alternates;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24.38px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding: 13px 0 8px;
-  color: #0e025b;
+
+  padding: 16px 0 0px;
 }
 .advantages-text-bold {
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
+  font-family: Montserrat Alternates;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #0e025b;
 }
 @media screen and (min-width: 1200px) {
   .advantages {
     width: 1440px;
-    height: 400px;
+    height: 798px;
+
     margin: auto;
-    padding: 48px 153px 0px;
+    padding: 40px 240px 0px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("/image/advantages/Benefits\ \(1\).png");
+    background-image: url("/img/advantages/Advantages\ \(1\).png");
   }
-  .advantages-text {
-    font-family: Poppins;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 33px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
+
   .advantages-list {
-    padding: 50px 0px;
+    padding: 27px 0px 0;
     display: flex;
     flex-direction: row;
-    gap: 18px;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .advantages-item {
+    width: 432px;
+    height: 189.63px;
   }
 }
-
-.gallery {
+.benefits {
   width: 375px;
-  height: 620px;
+  height: 856px;
 
   margin: auto;
-  padding: 32px 0px 0px;
+  padding: 40px 20px 0px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/gallery/Gallery.png");
+  background-image: url("/img/benefits/Benefits.png");
 }
-.gallery-title {
-  font-family: Poppins;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #ffffff;
+
+.benefits-list {
+  margin: auto;
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  background: #fff9e4;
+  border: 2px solid #1d0b45;
+  width: 335px;
+  padding: 28px 34px 28px 34px;
+  gap: 32px;
+  border-radius: 36px;
 }
+.benefits-item {
+  width: 267px;
+  height: 129.17px;
+  padding: 0px 12px 12px 0px;
+  border-bottom: 2px solid #0e1c53;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.benefits-item-two {
+  width: 267px;
+  height: 129.17px;
+  padding: 0px 12px 12px 0px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .benefits {
+    width: 1440px;
+    height: 400px;
+
+    margin: auto;
+    padding: 83px 62px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/img/benefits/Benefits\ \(1\).png");
+  }
+
+  .benefits-list {
+    margin: auto;
+    margin-top: 32px;
+
+    display: flex;
+    flex-direction: row;
+
+    width: 1336px;
+    padding: 28px 34px 28px 34px;
+    gap: 55px;
+  }
+  .benefits-item {
+    width: 267px;
+    height: 129.17px;
+    padding: 0px 62px 12px 0px;
+    border: none;
+    border-right: 2px solid #0e1c53;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .benefits-item-two {
+    width: 267px;
+    height: 129.17px;
+    padding: 0px 62px 12px 0px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.reviews {
+  width: 375px;
+  height: 1274px;
+
+  margin: auto;
+  padding: 40px 20px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/Reviews/User\ Reviews.png");
+}
+
+.reviews-list {
+  margin: auto;
+  margin-top: 40px;
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.reviews-item {
+}
+.reviews-item-two {
+  width: 335px;
+  background: #fff9e4;
+  padding: 6px 36px 16px 36px;
+  border: 1px solid #1d0b45;
+  border-radius: 26px;
+}
+@media screen and (min-width: 1200px) {
+  .reviews {
+    width: 1440px;
+    height: 798px;
+
+    margin: auto;
+    padding: 40px 181px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/img/Reviews/User\ Reviews\ \(1\).png");
+  }
+
+  .reviews-list {
+    margin: auto;
+    margin-top: 13px;
+    gap: 18px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .reviews-item {
+  }
+  .reviews-item-two {
+    width: 520px;
+    background: #fff9e4;
+    padding: 6px 36px 16px 36px;
+    border: 1px solid #1d0b45;
+    border-radius: 26px;
+  }
+}
+.gallery {
+  width: 375px;
+  background: #fdf1c8;
+
+  margin: auto;
+  padding: 40px 0px;
+}
+
 .gallery-list {
   width: 375px;
   margin: auto;
+  padding: 40px 0 32px;
 }
 
 .gallery-item {
   overflow: hidden;
   position: relative;
-  width: 362px;
-  height: 476px;
-  border-radius: 18px;
-  margin: 0 1px;
+  width: 320px;
+  height: 460px;
+  box-shadow: 0px 4px 66px 0px #ffffff;
+
+  border-radius: 36px;
+
+  margin: 0 10px;
 }
 .gallery-img {
   width: 100%;
@@ -628,7 +747,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 24px;
 }
 
 .gallery-button {
@@ -637,8 +756,8 @@ a {
   padding: 0;
   -webkit-transition: scale 0.3s ease;
   transition: scale 0.3s ease;
-  width: 50.67px;
-  height: 55px;
+  width: 62.78px;
+  height: 59.1px;
 }
 
 .gallery-button:hover {
@@ -650,112 +769,34 @@ a {
 }
 
 .gallery-button-icon {
-  width: 50.67px;
-  height: 55px;
+  width: 62.78px;
+  height: 59.1px;
 }
 @media screen and (min-width: 1200px) {
   .gallery {
     width: 1440px;
-    height: 600px;
-
-    background-image: url("/image/gallery/Gallery\ \(1\).png");
   }
 
   .gallery-list {
     width: 1440px;
     margin: auto;
   }
-}
-.play {
-  width: 375px;
-  margin: auto;
-  padding: 32px 20px;
-}
+  .gallery-item {
+    overflow: hidden;
+    position: relative;
+    width: 370px;
+    height: 532px;
 
-.play-list {
-  padding-top: 40px;
-  margin: auto;
-  padding-bottom: 20px;
-}
-.play-item {
-  width: 335px;
-  height: 140px;
-  padding: 16px;
-  border-radius: 26px;
-  margin: 0 10px;
-  background: #fdfdfd;
-}
+    box-shadow: 0px 4px 66px 0px #ffffff;
 
-.play-text-bold {
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.play-text {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  padding-top: 16px;
-}
+    border-radius: 36px;
 
-@media screen and (min-width: 1200px) {
-  .play {
-    width: 1440px;
-
-    margin: auto;
-    padding: 32px 0px 70px;
-  }
-
-  .play-list {
-    padding-top: 48px;
-    margin: auto;
-    padding-bottom: 22px;
-  }
-  .play-item {
-    width: 655px;
-    height: 148px;
-    padding: 32px 36px;
-    border-radius: 26px;
-    margin: 0 11px;
-    background: #fdfdfd;
-  }
-
-  .play-text-bold {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .play-text {
-    font-family: Poppins;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 27px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-    padding-top: 16px;
+    margin: 0 10px;
   }
 }
 
 .footer {
-  background: #fff352;
+  background: #fbad46;
 
   padding: 19px;
   margin: auto;
@@ -763,7 +804,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 22px;
 }
 
 .footer-wrapper {
@@ -775,23 +816,24 @@ a {
   gap: 4px;
 }
 .footer-text {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
+  font-family: Montserrat Alternates;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 17.07px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000;
+  color: #1d0b45;
 }
 
 .footer-copyright {
-  font-family: Poppins;
+  font-family: Montserrat Alternates;
   font-size: 10px;
-  font-weight: 400;
-  line-height: 15px;
+  font-weight: 700;
+  line-height: 12.19px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -801,38 +843,38 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .footer {
-    padding: 0px 50px 0 228px;
+    padding: 0px 41px 0 238px;
     display: flex;
     flex-direction: row;
     align-items: end;
     width: 1440px;
-    gap: 86px;
+    gap: 119px;
   }
   .footer-wrapper {
     gap: 4px;
-    padding: 27px 0;
-    padding-left: 84px;
+    padding: 39px 0;
+    padding-left: 0px;
   }
   .footer-text {
-    font-family: Poppins;
+    font-family: Montserrat Alternates;
     font-size: 18px;
-    font-weight: 500;
-    line-height: 27px;
+    font-weight: 800;
+    line-height: 21.94px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
   .footer-copyright {
-    font-family: Poppins;
+    font-family: Montserrat Alternates;
     font-size: 10px;
-    font-weight: 400;
-    line-height: 15px;
+    font-weight: 700;
+    line-height: 12.19px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-    padding: 27px 0;
+    padding: 44px 0;
   }
   .footer-img {
     display: flex;
@@ -848,7 +890,7 @@ a {
 }
 
 .policy-terms-title {
-  font-family: Poppins;
+  font-family: Montserrat Alternates;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -858,7 +900,7 @@ a {
 }
 
 .policy-terms-text {
-  font-family: Poppins;
+  font-family: Montserrat Alternates;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
@@ -869,7 +911,7 @@ a {
   padding-top: 20px;
 }
 .policy-terms-texts {
-  font-family: Poppins;
+  font-family: Montserrat Alternates;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -880,7 +922,7 @@ a {
   padding-top: 8px;
 }
 .policy-terms-text-one {
-  font-family: Poppins;
+  font-family: Montserrat Alternates;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -895,7 +937,7 @@ a {
   list-style-type: disc;
 
   padding: 20px 0 20px 25px;
-  font-family: Poppins;
+  font-family: Montserrat Alternates;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -912,7 +954,7 @@ a {
 
   padding-left: 25px;
 
-  font-family: Poppins;
+  font-family: Montserrat Alternates;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -924,7 +966,7 @@ a {
   color: inherit;
   text-decoration: none;
 
-  font-family: Poppins;
+  font-family: Montserrat Alternates;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
@@ -936,14 +978,6 @@ a {
 }
 .email-link-color {
   color: #000000;
-
-  font-family: Poppins;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 
   text-decoration: underline;
 }
